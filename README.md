@@ -1,1 +1,1 @@
-# workshopcuratot
+# workshopcurator
