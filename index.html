@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Synthesis Wall</title>
+  <meta name="description" content="Collect workshop sticky notes and turn them into segments, use case links and stats.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Kalam:wght@400;700&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <main class="landing">
+    <a class="brand" href="index.html"><span class="logo"><i></i><i></i><i></i></span> Synthesis Wall</a>
+    <section class="hero" style="margin-top:40px">
+      <div>
+        <h1>Workshop sticky notes, turned into answers you can act on.</h1>
+        <p class="lead">Collect notes live, then let the engine sort them into your segments, link them to your use case directory
+          (what was tried, why it failed) and give you themes and stats. AI writing is optional and can be switched off.</p>
+        <div class="row">
+          <a class="btn primary" href="app.html">Open facilitator dashboard</a>
+          <a class="btn" href="join.html">Join a workshop</a>
+        </div>
+        <form class="row" style="margin-top:16px;max-width:340px" onsubmit="event.preventDefault();location.href='join.html?code='+encodeURIComponent(this.code.value.trim())">
+          <input name="code" placeholder="Have a code? e.g. K7Q2MX" aria-label="Workshop code" style="text-transform:uppercase" class="grow">
+          <button type="submit">Join</button>
+        </form>
+      </div>
+      <div class="hero-wall" aria-hidden="true">
+        <div class="note c-yellow" style="left:10px;top:10px;transform:rotate(-4deg)">Members drop off after month two<span class="tag">Wellness · 88%</span></div>
+        <div class="note c-blue" style="left:190px;top:30px;transform:rotate(3deg)">Track cement trucks and share ETA<span class="tag">Building Materials</span></div>
+        <div class="note c-pink" style="left:60px;top:160px;transform:rotate(2deg)">Order ahead, skip the queue<span class="tag">Echoes failed UC-014</span></div>
+        <div class="note c-green" style="left:240px;top:170px;transform:rotate(-3deg)">Toddler shows on weekends<span class="tag">New idea</span></div>
+      </div>
+    </section>
+    <section class="how">
+      <div class="card"><h3><span class="n">1</span> Set up</h3><p class="muted">Name your segments (or let them be discovered), add questions, import your use cases from Excel and upload reference docs.</p></div>
+      <div class="card"><h3><span class="n">2</span> Collect</h3><p class="muted">Participants scan a QR code and post notes from their phones. The board updates live.</p></div>
+      <div class="card"><h3><span class="n">3</span> Synthesise</h3><p class="muted">Every note gets a segment with a reason and confidence, linked use cases and a theme. Correct it and it learns.</p></div>
+      <div class="card"><h3><span class="n">4</span> Export</h3><p class="muted">Download an Excel workbook with notes, segments, themes, use case links, stats and a summary.</p></div>
+    </section>
+  </main>
+</body>
+</html>
